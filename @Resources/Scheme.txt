@@ -1,0 +1,52 @@
+
+
+# 🌞 **LIGHT MODE — RGB VALUES**
+
+Panel Background: rgb(255, 255, 255), opacity 0.80
+Panel Border: rgb(229, 229, 229)
+Panel Shadow: rgb(0, 0, 0), opacity 0.12
+
+Title Text: rgb(26, 26, 26)
+Value Text: rgb(51, 51, 51)
+
+Active Icon: rgb(253, 184, 19)
+Inactive Icon: rgb(112, 112, 112)
+Hover Icon: rgb(255, 202, 71)
+
+Slider Track: rgb(218, 218, 218)
+Slider Fill Gradient Start: rgb(255, 204, 51)
+Slider Fill Gradient End: rgb(255, 136, 51)
+
+Slider Thumb: rgb(255, 255, 255)
+Slider Thumb Border: rgb(204, 204, 204)
+Slider Thumb Hover: rgb(245, 245, 245)
+Slider Thumb Glow: rgb(255, 204, 51), opacity 0.6
+
+Corner Radius: 12px
+
+---
+
+# 🌙 **DARK MODE — RGB VALUES**
+
+Panel Background: rgb(32, 32, 32), opacity 0.65
+Panel Border: rgb(58, 58, 58)
+Panel Shadow: rgb(0, 0, 0), opacity 0.45
+
+Title Text: rgb(255, 255, 255)
+Value Text: rgb(234, 234, 234)
+
+Active Icon: rgb(255, 201, 77)
+Inactive Icon: rgb(154, 154, 154)
+Hover Icon: rgb(255, 217, 120)
+
+Slider Track: rgb(64, 64, 64)
+Slider Fill Gradient Start: rgb(255, 212, 71)
+Slider Fill Gradient End: rgb(255, 140, 58)
+
+Slider Thumb: rgb(44, 44, 44)
+Slider Thumb Border: rgb(85, 85, 85)
+Slider Thumb Hover: rgb(58, 58, 58)
+Slider Thumb Glow: rgb(255, 212, 71), opacity 0.8
+
+Corner Radius: 12px
+
