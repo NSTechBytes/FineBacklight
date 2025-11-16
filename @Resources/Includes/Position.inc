@@ -1,5 +1,5 @@
 [Variables]
-Use_As_Widget=0
+Use_As_Widget=1
 ;Position
 Position=BR
 Monitor_Index=1
