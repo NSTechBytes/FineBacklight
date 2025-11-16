@@ -12,7 +12,9 @@ Ease_Type=OutQuart
 Animation_Direction=Bottom
 Animation_Steps=18
 Animation_Displacement=30
-
+;=============================================================
+;           Measures
+;=============================================================
 [Measure_Focus]
 Measure=Plugin
 Plugin=Focus
@@ -21,10 +23,6 @@ Plugin=Focus
 Measure=Script
 ScriptFile=#@#Scripts\Lua\Position.lua
 UpdateDivider=1
-
-;=========================================================================================================================================;
-;                                                                   Animation                                                             ;
-;=========================================================================================================================================;
 
 [Measure_Position_Animation_Timer]
 Measure=Plugin
