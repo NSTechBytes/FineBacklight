@@ -1,17 +1,17 @@
 [Variables]
-; -------------------------------- Positional -------------------------------- ;
+Use_As_Widget=0
+;Position
 Position=BR
-MonitorIndex=1
-XPad=0
-YPad=0
-PreserveTaskbarSpace=1
-StayOnDesktop=0
-
+Monitor_Index=1
+X_Padding=0
+Y_Padding=0
+Preserve_Taskbar_Space=1
+;Animation
 Animated=1
-EaseType=OutQuart
-AniDir=Bottom
-AniSteps=18
-AnimationDisplacement=30
+Ease_Type=OutQuart
+Animation_Direction=Bottom
+Animation_Steps=18
+Animation_Displacement=30
 
 [Measure_Focus]
 Measure=Plugin
@@ -26,25 +26,12 @@ UpdateDivider=1
 ;                                                                   Animation                                                             ;
 ;=========================================================================================================================================;
 
-[ActionTimer]
+[Measure_Position_Animation_Timer]
 Measure=Plugin
 Plugin=ActionTimer
 DynamicVariables=1
-ActionList1=Show | Repeat In,2,#AniSteps#
-ActionList2=Repeat Out,2,#AniSteps# | Hide
+ActionList1=Show | Repeat In,2,#Animation_Steps#
+ActionList2=Repeat Out,2,#Animation_Steps# | Hide
 In=[!CommandMeasure Measure_Position_Animation "TweenAnimation('in')"]
 Out=[!CommandMeasure Measure_Position_Animation "TweenAnimation('out')"]
 DefaultUpdateDivider=-1
-
-
-[ACTIONLOAD]
-Measure=String
-OnUpdateAction=[!CommandMeasure ActionTimer "Execute 1"]
-Disabled=1
-Group=NUOL
-
-[ACTIONUNLOAD]
-Measure=String
-OnUpdateAction=[!CommandMeasure ActionTimer "Execute 2"][!DisableMeasure #CURRENTSECTION#]
-Disabled=1
-Group=NUOL
