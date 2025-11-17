@@ -1,4 +1,4 @@
 [Variables]
 Skin_Name=FineBacklight
 Scale=1
-Layout=3
+Layout=2

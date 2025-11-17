@@ -163,17 +163,11 @@ FontWeight=500
 MeterStyle=Text_Style
 DynamicVariables=1
 
-[NightLight_Toggle_Track]
+[NightLight_Toggle]
 Meter=Shape 
 X=((#Background_Width#-75)*#Scale#)
 Y=(158*#Scale#)
 Shape=Rectangle 0,0,(46*#Scale#),(26*#Scale#),(13*#Scale#) | StrokeWidth 0 | Extend This
+Shape2=Ellipse (13*#Scale#),(13*#Scale#),(10*#Scale#) | Fill Color 255,255,255 | StrokeWidth 0 | Offset ([Measure_NightLight]*20*#Scale#),0
 MeterStyle=NightLight_Shape_Style_[Measure_NightLight]
-DynamicVariables=1
-
-[NightLight_Toggle_Thumb]
-Meter=Shape
-X=((#Background_Width#-75)*#Scale#)
-Y=(158*#Scale#)
-Shape=Ellipse (13*#Scale#),(13*#Scale#),(10*#Scale#) | Fill Color 255,255,255 | StrokeWidth 0 | Offset ([Measure_NightLight]*20*#Scale#),0
 DynamicVariables=1

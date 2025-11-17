@@ -29,7 +29,7 @@ Slider_Height=4
 Slider_X=60
 Slider_Track_Color=50,50,50
 Slider_Fill_Color=235,0,20
-Slider_Thumb_Size=18
+Slider_Thumb_Size=20
 
 ;=============================================================
 ;           MeterStyles
@@ -153,17 +153,11 @@ MeterStyle=Text_Style
 StringAlign=Right
 DynamicVariables=1
 
-[NightLight_Toggle_Track]
+[NightLight_Toggle]
 Meter=Shape 
 X=((#Background_Width#-80)*#Scale#)
 Y=(138*#Scale#)
 Shape=Rectangle 0,0,(48*#Scale#),(26*#Scale#),(13*#Scale#) | StrokeWidth 0 | Extend This
+Shape2=Ellipse (13*#Scale#),(13*#Scale#),(9*#Scale#) | Fill Color 255,255,255 | StrokeWidth 0 | Offset ([Measure_NightLight]*22*#Scale#),0
 MeterStyle=NightLight_Shape_Style_[Measure_NightLight]
-DynamicVariables=1
-
-[NightLight_Toggle_Thumb]
-Meter=Shape
-X=((#Background_Width#-80)*#Scale#)
-Y=(138*#Scale#)
-Shape=Ellipse (13*#Scale#),(13*#Scale#),(9*#Scale#) | Fill Color 255,255,255 | StrokeWidth 0 | Offset ([Measure_NightLight]*22*#Scale#),0
 DynamicVariables=1

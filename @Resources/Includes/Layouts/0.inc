@@ -17,12 +17,12 @@ NightLight_On_Opacity=40
 NightLight_On_Hover_Opacity=60
 
 ; Brightness Slider
-Slider_Width=320
+Slider_Width=330
 Slider_Height=6
 Slider_X=70
 Slider_Track_Color=64,64,64
 Slider_Fill_Color=255,212,71
-Slider_Thumb_Size=16
+Slider_Thumb_Size=20
 
 ;=============================================================
 ;           MeterStyles
@@ -73,16 +73,16 @@ DynamicVariables=1
 [NightLight_Icon]
 Meter=Image
 ImageName=#@#Images\NightLight\[Measure_NightLight].png
-X=(10*#Scale#)r
-Y=(10*#Scale#)r 
+X=((#Background_Width#*#Scale#)-(140*#Scale#))
+Y=(30*#Scale#)
 W=(20*#Scale#)
 H=(20*#Scale#)
 DynamicVariables=1
 
 [NightLight_Title]
 Meter=String
-X=(10*#Scale#)R
-Y=r
+X=((#Background_Width#*#Scale#)-(110*#Scale#))
+Y=(30*#Scale#)
 Text=NightLight
 FontSize=(12*#Scale#)
 MeterStyle=Text_Style
@@ -116,8 +116,8 @@ DynamicVariables=1
 
 [Brightness_Value_Text]
 Meter=String
-X=((#Slider_X#+#Slider_Width#+85)*#Scale#)
-Y=(100*#Scale#)
+X=((#Slider_X#+#Slider_Width#+70)*#Scale#)
+Y=(98*#Scale#)
 Text=[Measure_Backlight]%
 FontSize=(14*#Scale#)
 MeterStyle=Text_Style
