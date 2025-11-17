@@ -40,9 +40,9 @@ NightLight_On_Color=235,0,20
 NightLight_On_Opacity=255
 NightLight_On_Hover_Opacity=230
 ; Brightness Slider
-Slider_Width=370
+Slider_Width=390
 Slider_Height=4
-Slider_X=70
+Slider_X=60
 Slider_Track_Color=50,50,50
 Slider_Fill_Color=235,0,20
 Slider_Thumb_Size=20

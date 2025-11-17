@@ -46,8 +46,8 @@ StringAlign=Left
 Meter=Shape
 Shape=Rectangle 0,0,(#Background_Width#*#Scale#),(#Background_Height#*#Scale#),#Background_Corner_Round# | StrokeWidth 0 | FillColor #Background_Color#,#Background_Opacity#
 DynamicVariables=1
-; Brightness Section
 
+; Brightness Section
 [Brightness_Icon]
 Meter=Image
 ImagePath=#@#Images\Brightness
@@ -87,7 +87,7 @@ X=(#Slider_X#*#Scale#)
 Y=(80*#Scale#)
 Shape=Rectangle 0,0,(#Slider_Width#*#Scale#),(#Slider_Height#*#Scale#),(#Slider_Height#/2*#Scale#) | Fill Color #Slider_Track_Color# | StrokeWidth 0
 Shape2=Rectangle 0,0,(Clamp([Slider_Drag_Calc]*[Slider_Size_Calc],0,(#Slider_Width#*#Scale#))),(#Slider_Height#*#Scale#),(#Slider_Height#/2*#Scale#) | Fill Color #Slider_Fill_Color# | StrokeWidth 0
-LeftMouseDownAction=[!CommandMeasure Measure_Backlight "SetBacklight $MouseX:%$"][!Update]
+LeftMouseDownAction=[!CommandMeasure Measure_Backlight "SetBacklight $MouseX:%$"][!UpdateMeter *][!Redraw]
 DynamicVariables=1
 
 [Brightness_Slider_Thumb]
@@ -97,8 +97,8 @@ Y=(80*#Scale#)
 Shape=Ellipse (#Slider_Thumb_Size#/2*#Scale#),(#Slider_Thumb_Size#/2*#Scale#),(#Slider_Thumb_Size#/2*#Scale#) | Fill Color #Accent_Color# | StrokeWidth 0 | Offset (Clamp([Slider_Drag_Calc]*[Slider_Size_Calc],0,(#Slider_Width#*#Scale#))),(-(#Slider_Thumb_Size#/2*#Scale#)+(#Slider_Height#/2*#Scale#))
 MouseOverAction=[!CommandMeasure Measure_Mouse_Brightness "Start"]
 DynamicVariables=1
-; Divider Line
 
+; Divider Line
 [Divider_Line]
 Meter=Shape
 X=(30*#Scale#)

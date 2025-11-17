@@ -101,8 +101,8 @@ X=(#Slider_X#*#Scale#)
 Y=(78*#Scale#)
 Shape=Rectangle 0,0,(#Slider_Width#*#Scale#),(#Slider_Height#*#Scale#),(#Slider_Height#/2*#Scale#) | Fill Color #Slider_Track_Color# | StrokeWidth 0
 Shape2=Rectangle 0,0,(Clamp([Slider_Drag_Calc]/100*(#Slider_Width#*#Scale#),0,(#Slider_Width#*#Scale#))),(#Slider_Height#*#Scale#),(#Slider_Height#/2*#Scale#) | Fill Color #Slider_Fill_Color# | StrokeWidth 0
-LeftMouseDownAction=[!CommandMeasure Measure_Backlight "SetBacklight $MouseX:%$"][!Update]
-MouseOverAction=[!CommandMeasure Measure_Mouse_Brightness "Start"]
+LeftMouseUpAction=[!CommandMeasure Measure_Backlight "SetBacklight $MouseX:%$"][!UpdateMeter *][!Redraw]
+LeftMouseDownAction=[!CommandMeasure Measure_Mouse_Brightness "Start"]
 DynamicVariables=1
 ; NightLight Card
 
